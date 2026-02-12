@@ -1,0 +1,432 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 15px;
+  font-size: 0;
+}
+
+.bench-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 60px 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  /* margin: 0; */
+  margin: 0 auto; /* 居中 */
+  max-height: 480px; /* 限制最大高度 */
+  max-width: 100%; /* 不超过容器宽度 */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* 保持比例，完整显示 */
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* 保持阴影效果 */
+  border-radius: 8px; /* 保持圆角 */
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #69dff6, #760ce7); /* 左到右渐变色 */
+  -webkit-background-clip: text;  /* Chrome / Safari */
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;           /* 标准属性 */
+  color: transparent;              /* 兼容性处理 */
+  font-weight: bold;                /* 让渐变更显眼 */
+}
+
+.carousel-section .hero-body {
+  background-color: rgba(255, 255, 255, 0); 
+}
+
+.carousel-section video {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.carousel_title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.carousel-section {
+  background:
+    /* 上下渐变淡出 */
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    /* 半透明覆盖 */
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    /* 背景图片 */
+    url('../images/household_background.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center; 
+  transition: background-position 0.7s ease-in-out; 
+}
+
+
+.household-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/household_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.service-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/service_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.outdoor-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/outdoor_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.benchmark-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url('../images/map_background_0.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1% center;
+}
+
+.glow-text {
+  color: white;
+  text-shadow:
+    0 0 5px #ff6600,
+    0 0 10px #ff6600,
+    0 0 20px #ff6600;
+}
+
+.highlight-title {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ================================================== */
+/*  Custom SVG Navigation for Benchmark Carousel      */
+/* ================================================== */
+
+/* 1. 隐藏原始的导航点样式 */
+#benchmark-carousel .slider-pagination .slider-page {
+  background: transparent; /* 移除背景色 */
+  border: none;            /* 移除可能存在的边框 */
+  font-size: 0;            /* 隐藏内部的数字 */
+  width: 40px;             /* 设置点击区域的宽度 */
+  height: 40px;            /* 设置点击区域的高度 */
+  
+  /* 统一定义背景图的属性 */
+  background-size: 70%;    /* SVG 大小为其容器的 70% */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 2. 设置默认（未选中）状态的样式 */
+  filter: grayscale(100%) opacity(50%); /* 变灰且半透明 */
+  transition: all 0.3s ease-in-out;    /* 平滑过渡效果 */
+  cursor: pointer;
+}
+
+/* 3. 设置当前活动（选中）状态的样式 */
+#benchmark-carousel .slider-pagination .slider-page.is-active {
+  filter: grayscale(0) opacity(100%);     /* 恢复原色且不透明 */
+  transform: scale(1.15);                /* 轻微放大，突出显示 */
+}
+
+/* 4. 为每个导航点分别指定 SVG 图标 */
+/* 注意：请确保下面的路径相对于你的 CSS 文件是正确的！*/
+/* 假设 index.css 在 static/css/ 目录下，图标在 static/icons/ 目录下 */
+
+#benchmark-carousel .slider-pagination .slider-page:nth-child(1) {
+  background-image: url('../icons/benchmark-icon-1.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(2) {
+  background-image: url('../icons/benchmark-icon-2.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(3) {
+  background-image: url('../icons/benchmark-icon-3.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(4) {
+  background-image: url('../icons/benchmark-icon-4.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(5) {
+  background-image: url('../icons/benchmark-icon-5.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(6) {
+  background-image: url('../icons/benchmark-icon-6.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(7) {
+  background-image: url('../icons/benchmark-icon-7.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(8) {
+  background-image: url('../icons/benchmark-icon-8.svg'); 
+}
+
+
+/* 1. 设置 Hero 部分的背景图 */
+.hero.is-fullheight {
+  /* 替换为你自己的背景图片路径 */
+  background-image: url('../images/cover.png'); 
+  
+  /* 确保图片覆盖整个区域，不重复，并居中显示 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-body.blur{
+  /* 关键：设置半透明的白色背景，这将覆盖在父元素 .hero 的背景图之上 */
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 代表 50% 透明度 */
+
+  /* (可选) 添加毛玻璃效果，模糊背景图，让文字更突出 */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+/* 2. 设置内容框的样式 */
+/* .content-box {
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  max-width: 90%;
+} */
+
+/* 确保链接按钮在深色和浅色背景下都可见
+.publication-links .button.is-dark {
+    background-color: #363636;
+    border-color: transparent;
+    color: #fff;
+}
+.publication-links .button.is-dark:hover {
+    background-color: #222;
+} */
+
+/* 容器样式，确保标题居中且不会因动画跳动 */
+.title-animation-container {
+  /* 设置一个最小高度，防止在标题切换时页面布局跳动 */
+  min-height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 默认隐藏副标题，并为它的淡入淡出添加过渡效果 */
+#subtitle {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  /* 确保它在主标题消失后才出现，位置固定 */
+  position: absolute;
+}
+
+/* 主标题默认可见 */
+#main-title {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* 关键：打字效果的光标 */
+#typing-text::after {
+  content: '▋'; /* 你可以用 | 或者 _ 等其他字符 */
+  display: inline-block;
+  margin-left: 0.15em;
+  color: #363636; /* 光标颜色 */
+  /* 闪烁动画 */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 辅助 class，用于 JS 控制显示/隐藏 */
+.is-hidden {
+  opacity: 0 !important;
+}
+
+.hero.is-fullheight {
+  position: relative;
+  overflow: hidden;
+  /* 移除背景图片设置 */
+}
+
+.hero-video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* 如果视频太亮，可以添加深色遮罩 */
+.hero.is-fullheight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* 可选：添加暗色遮罩 */
+  z-index: 0;
+}
+
+.hero-body.blur {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>3DGSNav: Enhancing Vision-Language Model Reasoning for Object Navigation via Active 3D Gaussian Splatting</title>
+  <link rel="icon" type="image/png" href="static/images/icon_full.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+  <section class="hero is-fullheight">
+
+    <video autoplay muted loop playsinline class="hero-video-background">
+    <source src="static/images/cover.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-body blur">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+  
+            <!-- Start: Wrapper for semi-transparent background -->
+            <div class="content-box">
+              <!-- <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+                <img src="static/images/icon_full.png" alt="ODYSSEY icon" style="height: 1.5em;">
+                <span class="gradient-text">ODYSSEY &nbsp;</span>
+              </h1>
+              <h1 class="title is-1 publication-title is-size-1-mobile">
+                Open-World Quadrupeds Exploration and <br>
+                Manipulation for Long-Horizon Tasks
+              </h1> -->
+
+              <div class="title-animation-container">
+                <h1 id="main-title" class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+                  <!-- <img src="static/images/icon_full.gif" alt="ODYSSEY icon" style="height: 1.5em; vertical-align: middle;"> -->
+                  <img src="static/images/icon_full.png" alt="3DGSNav icon" style="height: 1.3em;vertical-align: -0.15em;">
+                  <span class="gradient-text"><span id="typing-text"></span></span>
+                </h1>
+                <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 3rem;">
+                  Enhancing Vision-Language Model Reasoning for <br>
+                  Object Navigation via Active 3D Gaussian Splatting
+                </h1>
+              </div>  
+              <!-- <div class="is-size-3 has-text-danger has-text-weight-bold" style="margin-top: 1rem;">
+                Accepted as <span style="color:#ff3860;">Oral Presentation at AAAI 2026</span> 🎉
+              </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                -->
+              <div class="is-size-4 publication-authors">
+                <span class="author-block">
+                  Wancai Zheng<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?hl=en&user=FaOqRpcAAAAJ&view_op=list_works">Hao Chen</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  Xianlong Lu<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Linlin Ou<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Xinyi Yu<sup>1*</sup>,
+                </span>
+                
+              </div>
+    
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Zhejiang University of Technology.</span><br>
+                <span class="author-block"><sup>2</sup>Zhejiang University.</span><br>
+                <span class="author-block"><sup>*</sup>Corresponding author</span>
+              </div>
+    
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!-- ... (links are unchanged) ... -->
+                  <!-- Arxiv Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>ArXiv</span>
+                    </a>
+                  </span>
+      
+                  <!-- Video Link. -->
+                  <!-- <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span> -->
+      
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code(Coming soon)</span>
+                      </a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <!-- End: Wrapper for semi-transparent background -->
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/pipeline.png">
+        <div class="content has-text-justified">
+          <p>
+            Object navigation is a core capability of embodied intelligence, enabling an agent to locate target objects in unknown environments. Recent advances in vision–language models (VLMs) have facilitated zero-shot object navigation (ZSON). However, existing methods often rely on <strong>scene abstractions</strong> that convert environments into semantic maps or textual representations, causing high‑level decision making to be constrained by the accuracy of low‑level perception. In this work, we present <strong class="gradient-text">3DGSNav</strong>, a novel ZSON framework that embeds 3D Gaussian Splatting (3DGS) as persistent memory for VLMs to enhance spatial reasoning. Through active perception, 3DGSNav incrementally constructs a 3DGS representation of the environment, enabling trajectory-guided free-viewpoint rendering of frontier-aware first-person views. Moreover, we design structured visual prompts and integrate them with Chain-of-Thought (CoT) prompting to further improve VLM reasoning. During navigation, a real‑time object detector filters potential targets, while VLM‑driven active viewpoint switching performs target re‑verification, ensuring efficient and reliable recognition.
+            Extensive evaluations across multiple benchmarks and real‑world experiments on a quadruped robot demonstrate that our method achieves robust and competitive performance against state‑of‑the‑art approaches.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- <section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">3DGSNav&nbsp;</span>Preview DEMO</h2>
+        <div class="content">
+          <p>
+          Our proposed <span class="gradient-text">ODYSSEY</span> system empowers quadruped robots 🐾 to excel in diverse environments
+           — from <strong>household chores</strong> 🏠 and <strong>services</strong> 🍽️ to <strong>outdoor maintenance</strong> 🌿. 
+           Acting as butlers, waiters, gardeners, and more, these versatile robot assistants bring intelligence and agility to every task 🤖✨.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Household carousel -->
+<section class="hero is-small carousel-section household-section">
+  <div class="hero-body">
+    <div class="container">
+      <!-- <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
+        <img src="static/images/household.svg" style="height: 1.5em;">
+        Household</h1> -->
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">3DGSNav&nbsp;</span>Real-world DEMO</h2>
+      <div id="household-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/office_chair.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/hotel_sofa.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/hotel_slippers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/hotel_plant.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/hotel_toliet.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Household carousel -->
+
+<!-- Service carousel -->
+<section class="hero is-small carousel-section service-section">
+  <div class="hero-body">
+    <div class="container">
+      <!-- <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/service.svg" style="height: 1.5em;">
+        &nbsp;Service</h1> -->
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">3DGSNav&nbsp;</span>Simulation DEMO</h2>
+      <div id="service-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/demo1_x264.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/demo6_x264.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/demo4_x264.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/demo5_x264.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/demo2_x264.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Service carousel -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{wang2025odyssey,
+          title={ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for Long-Horizon Tasks},
+          author={Wang, Kaijun and Lu, Liqin and Liu, Mingyu and Jiang, Jianuo and Li, Zeju and Zhang, Bolin and Zheng, Wancai and Yu, Xinyi and Chen, Hao and Shen, Chunhua},
+          journal={arXiv preprint arXiv:2508.08240},
+          year={2025}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> and <a href="https://kaijwang.github.io/odyssey.github.io/" target="_blank">ODYSSEY</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '0% center',   // Index 0
+    '50% center',  // Index 1
+    '100% center'  // Index 2
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.results-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '2% center',   // Index 0
+    '18% center',  // Index 1
+    '34% center',  // Index 2
+    '50% center',  // Index 3
+    '66% center',  // Index 4
+    '82% center',  // Index 5
+    '98% center',  // Index 6
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.bench-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  
+    // --- 配置项 ---
+    const typingTextElement = document.getElementById('typing-text');
+    const mainTitleElement = document.getElementById('main-title');
+    const subtitleElement = document.getElementById('subtitle');
+  
+    const textToType = "3DGSNav";
+    const typeSpeed = 150; // 打字速度 (ms)
+    const pauseAfterTyping = 2000; // 打完字后的停留时间
+    const pauseOnSubtitle = 4000; // 副标题显示时间
+    const transitionDuration = 800; // 淡入淡出动画的持续时间 (应与CSS中的 transition 一致)
+  
+    // --- 动画函数 ---
+  
+    // 1. 模拟等待的函数
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  
+    // 2. 打字函数
+    async function typeText() {
+      // 重置文本内容
+      typingTextElement.textContent = '';
+      // 开始打字
+      for (let i = 0; i < textToType.length; i++) {
+        typingTextElement.textContent += textToType.charAt(i);
+        await sleep(typeSpeed);
+      }
+    }
+  
+    // --- 主循环 ---
+    async function animationLoop() {
+      while (true) {
+        // **阶段 1: 打出并显示主标题**
+        // 显示主标题容器，但不显示光标动画
+        mainTitleElement.style.opacity = 1;
+        await typeText(); // 执行打字动画
+        
+        // 打字完成后，让光标消失
+        typingTextElement.style.setProperty('--blink-display', 'none');
+        if(typingTextElement.style.getPropertyValue('--blink-display') === 'none'){
+          const cursor = typingTextElement.parentElement.querySelector('span::after');
+          if(cursor) cursor.style.display = 'none';
+        }
+  
+        await sleep(pauseAfterTyping);
+  
+        // **阶段 2: 主标题淡出，副标题淡入**
+        mainTitleElement.style.opacity = 0;
+        subtitleElement.style.opacity = 1;
+  
+        // 等待副标题显示一段时间
+        await sleep(pauseOnSubtitle);
+  
+        // **阶段 3: 副标题淡出，为下一次循环做准备**
+        subtitleElement.style.opacity = 0;
+        
+        // 等待淡出动画完成
+        await sleep(transitionDuration);
+      }
+    }
+    
+    // 启动动画
+    animationLoop();
+  });
+  </script>
+
+</body>
+ </html>
