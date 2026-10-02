@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>3DGSNav: Enhancing Vision-Language Model Reasoning for Object Navigation via Active 3D Gaussian Splatting</title>
+  <title>3DGSNav: Renderable Visual-Spatial Context via 3D Gaussian Splatting for Zero-Shot Object Navigation</title>
   <link rel="icon" type="image/png" href="static/images/icon_full.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -74,8 +74,8 @@
                   <span class="gradient-text"><span id="typing-text"></span></span>
                 </h1>
                 <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 3rem;">
-                  Enhancing Vision-Language Model Reasoning for <br>
-                  Object Navigation via Active 3D Gaussian Splatting
+                  Renderable Visual-Spatial Context via  <br>
+                  3D Gaussian Splatting for Zero-Shot Object Navigation
                 </h1>
               </div>  
               <!-- <div class="is-size-3 has-text-danger has-text-weight-bold" style="margin-top: 1rem;">
@@ -162,9 +162,12 @@
           <img src="static/images/pipeline.png">
         <div class="content has-text-justified">
           <p>
-            Object navigation is a core capability of embodied intelligence, enabling an agent to locate target objects in unknown environments. Recent advances in vision–language models (VLMs) have facilitated zero-shot object navigation (ZSON). However, existing methods often rely on <strong>scene abstractions</strong> that convert environments into semantic maps or textual representations, causing high‑level decision making to be constrained by the accuracy of low‑level perception. In this work, we present <strong class="gradient-text">3DGSNav</strong>, a novel ZSON framework that embeds 3D Gaussian Splatting (3DGS) as persistent memory for VLMs to enhance spatial reasoning. Through active perception, 3DGSNav incrementally constructs a 3DGS representation of the environment, enabling trajectory-guided free-viewpoint rendering of frontier-aware first-person views. Moreover, we design structured visual prompts and integrate them with Chain-of-Thought (CoT) prompting to further improve VLM reasoning. During navigation, a real‑time object detector filters potential targets, while VLM‑driven active viewpoint switching performs target re‑verification, ensuring efficient and reliable recognition.
-            Extensive evaluations across multiple benchmarks and real‑world experiments on a quadruped robot demonstrate that our method achieves robust and competitive performance against state‑of‑the‑art approaches.
 
+            
+            In zero-shot object navigation, access to rich visual-spatial context is critical for reliable target search in unknown environments.
+            Existing methods typically construct abstract scene representations from observations, such as textual descriptions or semantic maps. 
+            Consequently, high-level decision-making is constrained by the information preserved in these abstractions, 
+            which may omit fine-grained visual details and spatial relationships. In this work, we present <strong class="gradient-text">3DGSNav</strong>, a novel ZSON framework that leverages 3D Gaussian Splatting to provide VLMs with rich visual-spatial context for navigation reasoning. Through active perception, 3DGSNav selectively acquires complementary observations to incrementally construct a visual-spatial scene representation. Building upon this representation, a trajectory-guided visual evidence generation strategy is employed to optimize virtual viewpoints for generating informative frontier-centric views, while structured visual prompts integrate these views with global spatial context to facilitate VLM reasoning. Moreover, a virtual-view target re-verification strategy exploits the constructed 3D Gaussian scene to obtain complementary visual evidence from alternative viewpoints without additional physical traversal. Extensive evaluations across multiple benchmarks and real-world experiments on a quadruped robot demonstrate robust and competitive performance compared with state-of-the-art approaches.
           </p>
         </div>
       </div>
